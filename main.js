@@ -33,7 +33,7 @@ async function sendDiscordMessage(webhookUrl, message) {
   }
 
 // Create a cron job to fetch the XRP price every 10 seconds
-cron.schedule('0 */30 * * * *', async () => {
+cron.schedule('0 */1 * * * *', async () => {
   await getXrpPrice();
 });
 
